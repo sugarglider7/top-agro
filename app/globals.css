@@ -237,3 +237,45 @@ html[dir="rtl"] .link-line::after {
     opacity: 0.5;
   }
 }
+
+/* ---- Specification tables ---- */
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+}
+.spec-table th {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: start;
+  color: color-mix(in srgb, var(--color-ink) 55%, transparent);
+  padding: 0.65rem 0.9rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-ink) 25%, transparent);
+}
+.spec-table td {
+  padding: 0.7rem 0.9rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-ink) 10%, transparent);
+  color: color-mix(in srgb, var(--color-ink) 82%, transparent);
+  vertical-align: top;
+}
+.spec-table tr.article-row td {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-olive-800);
+  background: color-mix(in srgb, var(--color-olive-100) 40%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--color-ink) 18%, transparent);
+}
+html[dir="rtl"] .spec-table th {
+  letter-spacing: 0.03em;
+}
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.table-scroll > table {
+  min-width: 560px;
+}
