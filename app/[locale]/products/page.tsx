@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { href, isLocale, type Locale } from "@/lib/i18n";
+import { pageMeta } from "@/lib/seo";
 import { products } from "@/content/products";
 import { photos } from "@/lib/images";
 import { Pic } from "@/components/photo";
@@ -16,7 +17,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return { title: products[locale].hub.metaTitle };
+  return pageMeta(locale, "/products", { title: products[locale].hub.metaTitle });
 }
 
 const LINE_PHOTOS = {

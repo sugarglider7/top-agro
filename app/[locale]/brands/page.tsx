@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { href, isLocale, type Locale } from "@/lib/i18n";
+import { pageMeta } from "@/lib/seo";
 import { brands } from "@/content/brands";
 import { kamilCans, kamilLabels } from "@/lib/images";
 import { PageHero } from "@/components/page-hero";
@@ -14,7 +15,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return { title: brands[locale].metaTitle };
+  return pageMeta(locale, "/brands", { title: brands[locale].metaTitle });
 }
 
 export default async function BrandsPage({

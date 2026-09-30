@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { isLocale, type Locale } from "@/lib/i18n";
+import { pageMeta } from "@/lib/seo";
 import { products } from "@/content/products";
 import {
   APRICOT_BRIX,
@@ -22,7 +23,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return { title: products[locale].apricots.metaTitle };
+  return pageMeta(locale, "/products/apricots", { title: products[locale].apricots.metaTitle });
 }
 
 export default async function ApricotsPage({

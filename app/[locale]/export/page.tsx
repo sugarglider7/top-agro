@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { href, isLocale, type Locale } from "@/lib/i18n";
+import { pageMeta } from "@/lib/seo";
 import { exportContent } from "@/content/export";
 import { photos } from "@/lib/images";
 import { PageHero } from "@/components/page-hero";
@@ -15,7 +16,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return { title: exportContent[locale].metaTitle };
+  return pageMeta(locale, "/export", { title: exportContent[locale].metaTitle });
 }
 
 export default async function ExportPage({

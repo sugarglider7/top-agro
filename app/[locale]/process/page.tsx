@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { href, isLocale, type Locale } from "@/lib/i18n";
+import { pageMeta } from "@/lib/seo";
 import { processContent } from "@/content/process";
 import { legacy, photos } from "@/lib/images";
 import { PageHero } from "@/components/page-hero";
@@ -14,7 +15,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return { title: processContent[locale].metaTitle };
+  return pageMeta(locale, "/process", { title: processContent[locale].metaTitle });
 }
 
 const STEP_ARCHIVES = [

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { isLocale, type Locale } from "@/lib/i18n";
+import { pageMeta } from "@/lib/seo";
 import { contactContent } from "@/content/contact";
 import { contact } from "@/content/ui";
 import { legacy } from "@/lib/images";
@@ -16,7 +17,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return { title: contactContent[locale].metaTitle };
+  return pageMeta(locale, "/contact", { title: contactContent[locale].metaTitle });
 }
 
 export default async function ContactPage({

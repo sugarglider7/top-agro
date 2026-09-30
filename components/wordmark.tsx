@@ -11,6 +11,7 @@ export function Wordmark({
   return (
     <Link
       href={href(locale, "/")}
+      dir="ltr"
       className={`group inline-flex flex-col leading-none ${onDark ? "text-bone-50" : "text-ink"}`}
       aria-label="Marrakech Top Agro Export — home"
     >

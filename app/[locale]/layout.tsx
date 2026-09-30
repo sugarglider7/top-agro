@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Archivo, Fraunces, IBM_Plex_Sans_Arabic } from "next/font/google";
 import { notFound } from "next/navigation";
 import { dir, isLocale, locales, type Locale } from "@/lib/i18n";
+import { pageMeta, SITE_URL } from "@/lib/seo";
 import { ui } from "@/content/ui";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -41,17 +42,29 @@ export async function generateMetadata({
   const { locale } = await params;
   if (!isLocale(locale)) return {};
   const t = ui[locale];
+  const description =
+    locale === "fr"
+      ? "Olives de table, abricots et câpres du Maroc — transformés, conditionnés et exportés depuis Marrakech depuis 1989."
+      : locale === "ar"
+        ? "زيتون المائدة والمشمش والقبار من المغرب — يُصنَّع ويُعبَّأ ويُصدَّر من مراكش منذ 1989."
+        : "Moroccan table olives, apricots and capers — processed, packed and exported from Marrakech since 1989.";
   return {
+    metadataBase: new URL(SITE_URL),
     title: {
       default: `${t.companyName} — ${t.tagline}`,
       template: `%s — ${t.companyShort}`,
     },
-    description:
-      locale === "fr"
-        ? "Olives de table, abricots et câpres du Maroc — transformés, conditionnés et exportés depuis Marrakech depuis 1989."
-        : locale === "ar"
-          ? "زيتون المائدة والمشمش والقبار من المغرب — يُصنَّع ويُعبَّأ ويُصدَّر من مراكش منذ 1989."
-          : "Moroccan table olives, apricots and capers — processed, packed and exported from Marrakech since 1989.",
+    description,
+    ...pageMeta(locale, "/"),
+    openGraph: {
+      type: "website",
+      siteName: t.companyName,
+      locale: locale === "fr" ? "fr_FR" : locale === "ar" ? "ar_MA" : "en_US",
+      title: `${t.companyName} — ${t.tagline}`,
+      description,
+      images: [{ url: "/og.jpg", width: 1200, height: 630 }],
+    },
+    twitter: { card: "summary_large_image" },
   };
 }
 
