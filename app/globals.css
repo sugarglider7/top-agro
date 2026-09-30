@@ -121,7 +121,6 @@ html[dir="rtl"] .eyebrow {
 
 /* ---- Photo treatment: unify mixed sources into one warm grade ---- */
 .photo-warm {
-  position: relative;
   overflow: hidden;
 }
 .photo-warm img {
@@ -192,4 +191,49 @@ html[dir="rtl"] .link-line::after {
 .link-line:hover::after,
 .link-line:focus-visible::after {
   transform: scaleX(1);
+}
+
+/* ---- World map: flowing route pulse + origin ping ---- */
+.map-flow {
+  stroke-dasharray: 0.08 0.92;
+  stroke-dashoffset: 1;
+  animation: map-flow 6s linear infinite;
+  opacity: 0.9;
+}
+@keyframes map-flow {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: -1;
+  }
+}
+.map-pulse {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: map-pulse 2.6s ease-out infinite;
+}
+@keyframes map-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  70% {
+    transform: scale(3.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(3.2);
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .map-flow,
+  .map-pulse {
+    animation: none;
+  }
+  .map-flow {
+    stroke-dasharray: none;
+    opacity: 0.5;
+  }
 }

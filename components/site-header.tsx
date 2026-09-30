@@ -93,7 +93,7 @@ export function SiteHeader({ locale }: { locale: Locale }) {
             : "h-20 bg-transparent"
         }`}
       >
-        <Wordmark locale={locale} />
+        <Wordmark locale={locale} onDark={!scrolled} />
 
         <nav
           aria-label="Primary"
@@ -106,8 +106,14 @@ export function SiteHeader({ locale }: { locale: Locale }) {
               <Link
                 key={item.key}
                 href={target}
-                className={`link-line text-[0.8rem] font-medium tracking-wide ${
-                  active ? "text-clay-600" : "text-ink/80 hover:text-ink"
+                className={`link-line text-[0.8rem] font-medium tracking-wide transition-colors ${
+                  active
+                    ? scrolled
+                      ? "text-clay-600"
+                      : "text-saffron-300"
+                    : scrolled
+                      ? "text-ink/80 hover:text-ink"
+                      : "text-bone-50/85 hover:text-bone-50"
                 }`}
               >
                 {t.nav[item.key]}
@@ -116,7 +122,11 @@ export function SiteHeader({ locale }: { locale: Locale }) {
           })}
           <Link
             href={href(locale, "/contact")}
-            className="bg-olive-800 px-5 py-2.5 text-[0.75rem] font-semibold tracking-[0.12em] text-bone-50 uppercase transition-colors hover:bg-olive-700"
+            className={`px-5 py-2.5 text-[0.75rem] font-semibold tracking-[0.12em] uppercase transition-colors ${
+              scrolled
+                ? "bg-olive-800 text-bone-50 hover:bg-olive-700"
+                : "bg-bone-50/10 text-bone-50 ring-1 ring-bone-50/40 backdrop-blur-sm hover:bg-bone-50/20"
+            }`}
           >
             {t.cta.exportEnquiry}
           </Link>
@@ -130,10 +140,14 @@ export function SiteHeader({ locale }: { locale: Locale }) {
           aria-controls="mobile-menu"
           className="flex h-11 items-center gap-2.5 px-2 lg:hidden"
         >
-          <span className="eyebrow !text-[0.65rem]">{t.header.menu}</span>
+          <span
+            className={`eyebrow !text-[0.65rem] ${scrolled ? "text-ink" : "text-bone-50"}`}
+          >
+            {t.header.menu}
+          </span>
           <span aria-hidden className="flex flex-col gap-[5px]">
-            <span className="block h-px w-6 bg-ink" />
-            <span className="block h-px w-6 bg-ink" />
+            <span className={`block h-px w-6 ${scrolled ? "bg-ink" : "bg-bone-50"}`} />
+            <span className={`block h-px w-6 ${scrolled ? "bg-ink" : "bg-bone-50"}`} />
           </span>
         </button>
       </div>
