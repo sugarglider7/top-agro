@@ -276,11 +276,11 @@ function FragmentRows({
         <tr key={f.format}>
           <td dir="ltr">{f.format}</td>
           <td dir="ltr">
-            {f.drainedG.toLocaleString("en-US").replace(",", " ")} g
+            {f.drainedG.toLocaleString("en-US").replace(",", "\u00A0")} g
             {f.drainedOz ? ` · ${f.drainedOz}` : ""}
           </td>
           <td>{f.perCarton}</td>
-          <td>{f.cartonsPerFcl.toLocaleString("en-US").replace(",", " ")}</td>
+          <td>{f.cartonsPerFcl.toLocaleString("en-US").replace(",", "\u00A0")}</td>
         </tr>
       ))}
     </>

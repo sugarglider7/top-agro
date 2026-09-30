@@ -96,7 +96,7 @@ export default async function ApricotsPage({
                 {APRICOT_PASTRY.map((row) => (
                   <tr key={row.format}>
                     <td dir="ltr" className="font-medium">{row.format}</td>
-                    <td dir="ltr">{row.drainedG.toLocaleString("en-US").replace(",", " ")} g</td>
+                    <td dir="ltr">{row.drainedG.toLocaleString("en-US").replace(",", "\u00A0")} g</td>
                     <td>{row.perCarton}</td>
                     <td>{row.cartonsPerFcl}</td>
                     <td dir="ltr">{APRICOT_BRIX}</td>

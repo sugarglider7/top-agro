@@ -31,18 +31,31 @@ Pages: home, /company, /products (+/products/olives, /apricots, /capers), /proce
 Key components: site-header (mobile overlay menu), site-footer, world-map (dotted halftone SVG + animated routes from lib/world-map.json, gen via scripts/gen-map.mjs), reveal (scroll), wordmark.
 Design system in app/globals.css: olive/bone/clay/saffron palette, Fraunces display + Archivo + IBM Plex Sans Arabic, grain/photo-warm/photo-archive treatments, map-flow animations.
 
-## Progress
+## Progress — COMPLETE (2026-09-29)
 - [x] Scaffold, git, GitHub repo sugarglider7/top-agro, first push
-- [x] Research complete (legacy crawl + public web + this fact sheet)
-- [x] i18n frame, header/footer, language gate, world-map component
-- [ ] Stock imagery (agent ImageCurator running → public/images/stock/)
-- [ ] Homepage
-- [ ] Products hub + 3 detail pages
-- [ ] Company, Process & Quality, Export, Brands, Contact/RFQ
-- [ ] FR/EN copy final; AR translation pass
-- [ ] Mobile + desktop QA, perf/console/SEO pass, final push
+- [x] Research complete (legacy crawl + public web + fact sheet above)
+- [x] i18n frame (en/fr/ar + RTL), header/footer, language gate, world map
+- [x] Stock imagery (17+2 curated photos, credits in research/image-credits.md)
+- [x] Homepage (hero, chain, products, figures, map teaser, quality, brands, CTA)
+- [x] Products hub + olives (bulk/canned/specs/8 recipes) + apricots (formats/calibres) + capers
+- [x] Company, Process & Quality (7 steps + HACCP + standards), Export (60-second brief,
+      interactive map, documented 2014 US shipment, buyer profiles), Brands (Kamil label wall)
+- [x] Contact/RFQ: validated form → mailto draft + copy summary (no fake backend)
+- [x] SEO: metadataBase, per-page canonical + hreflang alternates, sitemap.xml, robots.txt,
+      favicon (app/icon.svg), OG image (public/og.jpg), 404
+- [x] Arabic copy professionally reviewed (agent CopyPolish); FR spot-checked
+- [x] QA: zero console/page errors on 11 routes; static export smoke-tested (python http.server on out/);
+      mobile passes (390px) incl. Arabic RTL menu/tables; RTL number grouping fixed with NBSP;
+      a11y: single h1, labelled landmarks, all alt text
+- [x] `npx tsc --noEmit` and `next build` green (36 static pages)
 
-## Known issues / decisions
-- lib/images.ts is the single registry for stock photos — update paths there after ImageCurator lands.
-- next/font/google needs network at build.
-- dotted-map + proj4 installed --no-save (only needed to regen lib/world-map.json).
+## Verification / gotchas
+- Dev server: Turbopack sometimes misses globals.css edits → restart `next dev` if styles look stale.
+- Tables scroll horizontally on mobile (.table-scroll); RTL numbers use NBSP grouping.
+- View Transitions API enabled via CSS (progressive enhancement).
+- next/font/google needs network at build; dotted-map + proj4 installed --no-save (regen lib/world-map.json via scripts/gen-map.mjs).
+
+## Possible future polish (not blocking)
+- Mid-size (~1400px) image variants for desktop lazy sections.
+- Scroll-affordance fade on mobile tables.
+- Structured data (Organization/Product JSON-LD).
