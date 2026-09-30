@@ -1,0 +1,72 @@
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Untitled Document</title>
+
+<style type="text/css">
+<!--
+.taille10 {  font-family: Arial, Helvetica, sans-serif; font-size: 9pt; color: #FFFFFF}
+-->
+</style>
+</head>
+
+<body bgcolor="#FDE3C8" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table border="0" cellspacing="0" cellpadding="0" align="center" width="608">
+  <tr> 
+    <td><img src="images/equipements/title.gif" width="607" height="18" usemap="#Map" border="0"><map name="Map"><area shape="rect" coords="385,1,565,19" href="garantie.php"></map></td>
+  </tr>
+  <tr> 
+    <td>
+      <table width="607" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td><img src="images/equipements/olive1.jpg" width="474" height="313"></td>
+          <td background="images/equipements/olive2.jpg" class="taille10"> The 
+            harvest traditionally spans from September to January depending upon 
+            whether the olives are picked green or ripe. The green olive and the 
+            black olive are, in fact, one in the same fruit. The color is simply 
+            testament to its ripeness. The earlier green olive is extremely fragile 
+            and great care must be taken during harvest in order to maintain its 
+            integrity. The smallest ones are cold-pressed into olive oil</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td> 
+      <table border="0" cellspacing="0" cellpadding="0" width="607">
+        <tr> 
+          <td width="244"><img src="images/equipement/selection02.jpg" width="244" height="164"></td>
+          <td width="31"><img src="images/equipement/selection03.jpg" width="31" height="164"></td>
+          <td bgcolor="#336666"> <font size="2" face="Arial, Helvetica, sans-serif" color="#FFFFFF">The 
+            larger olives are reserved for the table. Finally, as the climate 
+            gradually becomes drier, the black olives are picked. Harvesting these 
+            olives is an excepltionally delicate process and precautions are taken 
+            to avoid all contact with the ground. Of course, all olives are not 
+            the same. As with wine, their character is determined as much by the 
+            age-old techniques used to prepare them as it is by intericacies of 
+            the soil and climate unique to their growing region.</font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td><img src="images/equipement/selection30.jpg" width="200" height="130"> 
+      <img src="images/equipement/selection31.jpg" width="200" height="130"> <img src="images/equipement/selection32.jpg" width="200" height="130"></td>
+  </tr>
+  <tr align="right"> 
+    <td><br>
+      <a href="garantie.php"><img src="images/equipements/link-guarantie.gif" width="146" height="26" border="0"></a></td>
+  </tr>
+</table>
+<br>
+<br>
+<br>
+<p align="center"><font color="#CCCCCC" size="1"><a href="http://www.agencecouleurs.com" target="_blank">Création site web <strong>Couleurs Com</strong></a> <a href="../marrakech.php" target="_blank">Marrakech</a></font> 
+<a href="http://www.marrakechpocket.com" target="_blank"><font color="#FFe3c8" size="1">Immobilier Marrakech</font></a> <a href="http://www.marrakechpocket.com" target="_blank"><font color="#FFe3c8" size="1">Riad Marrakech</font></a>
+</body>
+</html>

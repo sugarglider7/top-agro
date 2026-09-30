@@ -1,1 +1,195 @@
 @import "tailwindcss";
+
+@theme {
+  /* ---- Terroir palette: olive, bone, clay, saffron ---- */
+  --color-olive-950: #171b0f;
+  --color-olive-900: #212816;
+  --color-olive-800: #2c351d;
+  --color-olive-700: #3d4a28;
+  --color-olive-600: #4f5f33;
+  --color-olive-500: #5c6b3c;
+  --color-olive-400: #7d8c55;
+  --color-olive-300: #9aa86f;
+  --color-olive-200: #c2cba0;
+  --color-olive-100: #e2e6cf;
+
+  --color-bone-50: #faf6ec;
+  --color-bone-100: #f4edda;
+  --color-bone-200: #e9dfc4;
+  --color-bone-300: #dccfa9;
+
+  --color-clay-600: #a34d22;
+  --color-clay-500: #c2622f;
+  --color-clay-400: #d47a45;
+  --color-clay-300: #e29a6d;
+
+  --color-saffron-500: #c88a2e;
+  --color-saffron-400: #d99e43;
+  --color-saffron-300: #e7b76a;
+
+  --color-ink: #1c1a12;
+
+  --font-display: var(--font-fraunces), "Georgia", serif;
+  --font-sans: var(--font-archivo), "Helvetica Neue", Arial, sans-serif;
+  --font-arabic: var(--font-arabic-sans), "Geeza Pro", sans-serif;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --animate-marquee: marquee 42s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--color-bone-50);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Arabic: swap type system wholesale, keep latin for digits in data tables */
+html[dir="rtl"] body {
+  font-family: var(--font-arabic), var(--font-sans);
+}
+html[dir="rtl"] .font-display {
+  font-family: var(--font-arabic), var(--font-display);
+  font-weight: 700;
+}
+
+::selection {
+  background: var(--color-olive-700);
+  color: var(--color-bone-50);
+}
+
+/* ---- Display type helpers ---- */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.display-tight {
+  letter-spacing: -0.02em;
+  line-height: 0.98;
+}
+
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+html[dir="rtl"] .eyebrow {
+  letter-spacing: 0.06em;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- Grain + warm light ---- */
+.grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+}
+
+/* ---- Photo treatment: unify mixed sources into one warm grade ---- */
+.photo-warm {
+  position: relative;
+  overflow: hidden;
+}
+.photo-warm img {
+  filter: saturate(0.92) contrast(1.02) sepia(0.08);
+}
+.photo-warm::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(160deg, rgba(217, 158, 67, 0.1), transparent 45%),
+    linear-gradient(0deg, rgba(23, 27, 15, 0.12), transparent 40%);
+}
+
+.photo-archive img {
+  filter: sepia(0.35) saturate(0.7) contrast(0.95);
+}
+
+/* ---- Reveal-on-scroll ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 0.9s var(--ease-out-expo),
+    transform 0.9s var(--ease-out-expo);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ---- Hairlines ---- */
+.rule {
+  border-color: color-mix(in srgb, var(--color-ink) 14%, transparent);
+}
+.rule-light {
+  border-color: color-mix(in srgb, var(--color-bone-50) 18%, transparent);
+}
+
+/* ---- Underline link ---- */
+.link-line {
+  position: relative;
+  text-decoration: none;
+}
+.link-line::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  bottom: -3px;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: var(--tw-underline-origin, left);
+  transition: transform 0.45s var(--ease-out-expo);
+}
+html[dir="rtl"] .link-line::after {
+  transform-origin: right;
+}
+.link-line:hover::after,
+.link-line:focus-visible::after {
+  transform: scaleX(1);
+}
