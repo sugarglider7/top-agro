@@ -117,6 +117,16 @@ export const photos = {
     fr: "Sacs de jute dans un entrepôt",
     ar: "أكياس خيش في مستودع",
   }),
+  hotPeppers: stock("hot-peppers-market", 2400, 1800, {
+    en: "Red peppers hung at a market stall",
+    fr: "Piments rouges suspendus sur un étal de marché",
+    ar: "فلفل أحمر معلّق في سوق",
+  }),
+  lemons: stock("lemons-market", 2400, 1600, {
+    en: "Lemons in crates at a market",
+    fr: "Citrons en cagettes au marché",
+    ar: "ليمون في صناديق بالسوق",
+  }),
 } satisfies Record<string, Photo>;
 
 /** Authentic Top Agro material from the legacy website — archive treatment only. */

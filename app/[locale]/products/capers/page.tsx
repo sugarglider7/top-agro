@@ -23,8 +23,8 @@ export async function generateMetadata({
 const ITEM_PHOTOS: Record<string, Photo> = {
   capers: photos.capers,
   variants: photos.olivesBrine,
-  lemons: photos.spiceMarket,
-  peppers: photos.oliveJar,
+  lemons: photos.lemons,
+  peppers: photos.hotPeppers,
 };
 export default async function CapersPage({
   params,
@@ -67,6 +67,7 @@ export default async function CapersPage({
                     locale={l}
                     sizes="(min-width:1024px) 22vw, (min-width:640px) 45vw, 92vw"
                     className="h-full"
+                    imgClassName={item.key === "lemons" ? "object-left" : ""}
                   />
                 </div>
                 <h2 className="font-display mt-5 text-2xl font-medium text-ink">

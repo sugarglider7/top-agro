@@ -21,3 +21,5 @@ All images are free for commercial use, no attribution required (Unsplash Licens
 | atlas-mountains-palms.jpg | Atlas Mountains with palms and earthen village, Morocco | Open Borders | https://www.pexels.com/photo/scenic-view-of-atlas-mountains-in-morocco-37684102/ | Pexels License |
 | olive-oil-jar-rustic.jpg | Olive oil jug with spiced olives and olive branch (portrait) | Rahime Gül | https://www.pexels.com/photo/close-up-of-olives-and-a-jar-of-olive-oil-25745498/ | Pexels License |
 | burlap-sacks-barn.jpg | Stacked burlap sacks in rustic wooden barn | lu62 | https://www.pexels.com/photo/pile-of-brown-sacks-inside-a-wooden-barn-12293641/ | Pexels License |
+| hot-peppers-market.jpg | Red Espelette peppers hung at a market stall | Pixabay (via Pexels) | https://www.pexels.com/photo/red-chili-peppers-173880/ | Pexels License |
+| lemons-market.jpg | Lemons with leaves in crates at a market | (photographer per source page) | https://www.pexels.com/photo/fresh-lemons-and-lemon-juice-bottles-at-market-32843567/ | Pexels License |

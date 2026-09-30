@@ -279,3 +279,15 @@ html[dir="rtl"] .spec-table th {
 .table-scroll > table {
   min-width: 560px;
 }
+
+/* Cross-document page transitions (progressive enhancement) */
+@view-transition {
+  navigation: auto;
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}

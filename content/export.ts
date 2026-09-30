@@ -74,7 +74,7 @@ const en: ExportContent = {
   map: {
     eyebrow: "Markets",
     title: "Eighteen markets, five continents",
-    lede: "Hover a market to trace its route from Marrakech.",
+    lede: "Hover or tap a market to trace its route from Marrakech.",
     origin: "Marrakech",
     note: "Market list as published by the company on top-agro.com; current programmes on request.",
   },
@@ -156,7 +156,7 @@ const fr: ExportContent = {
   map: {
     eyebrow: "Marchés",
     title: "Dix-huit marchés, cinq continents",
-    lede: "Survolez un marché pour tracer sa route depuis Marrakech.",
+    lede: "Survolez ou touchez un marché pour tracer sa route depuis Marrakech.",
     origin: "Marrakech",
     note: "Liste des marchés telle que publiée par l'entreprise sur top-agro.com ; programmes actuels sur demande.",
   },
@@ -219,7 +219,7 @@ const ar: ExportContent = {
       },
       {
         q: "كيف تُضبط الجودة؟",
-        a: "ضبط قائم على HACCP من الاستلام إلى الشحن، بقيم معالجة حرارية منشورة لكل صنف — بسترة عند 95° للأخضر وتعقيم عند 121.1° للأسود — تُتحقق في مختبر المصنع.",
+        a: "ضبط قائم على HACCP من الاستلام إلى الشحن، بقيم معالجة حرارية منشورة لكل صنف — بسترة عند 95° للأخضر وتعقيم عند 121.1° للأسود — يُتحقق منها في مختبر المصنع.",
       },
       {
         q: "ما المعايير المعتمدة؟",
@@ -238,7 +238,7 @@ const ar: ExportContent = {
   map: {
     eyebrow: "الأسواق",
     title: "ثمانية عشر سوقاً، خمس قارات",
-    lede: "مرّر المؤشر فوق سوق لرسم طريقه من مراكش.",
+    lede: "مرّر المؤشر فوق سوق أو انقر عليه لرسم طريقه من مراكش.",
     origin: "مراكش",
     note: "قائمة الأسواق كما نشرتها الشركة على top-agro.com؛ البرامج الحالية عند الطلب.",
   },
@@ -247,7 +247,7 @@ const ar: ExportContent = {
     title: "على الماء، وفي السجلات",
     lede: "تُوثّق بيانات الجمارك العامة شحنات الدار — مثل هذه الشحنة من الزيتون المغربي إلى مستورد في نيويورك.",
     facts: [
-      { label: "الحمولة", value: "728 صندوقاً · 4 × 11 رطلاً زيتون مغربي مكبوس" },
+      { label: "الحمولة", value: "728 صندوقاً · 4 × 11 رطلاً من الزيتون المغربي المكبوس" },
       { label: "الرمز الجمركي", value: "071120 — زيتون محفوظ مؤقتاً" },
       { label: "المسار", value: "الدار البيضاء → برشلونة → نيوارك" },
       { label: "المرسَل إليه", value: "مستورد أغذية متوسطية، نيويورك" },
