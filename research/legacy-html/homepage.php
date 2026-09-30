@@ -1,0 +1,68 @@
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Top Agro Marrakech commerce</title>
+
+<style type="text/css">
+<!--
+body {
+	margin-top: 8%;
+	margin-bottom: 8%;
+}
+.style1 {
+	color: #999999;
+	font-family: TAHOMA;
+	font-size: 10px;
+}
+-->
+</style>
+</head>
+
+<body bgcolor="#FFe3c8" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+  <tr align="center" valign="top"> 
+    <td> 
+      <table width="100%" border="0">
+        <tr align="center"> 
+          <td><img src="images/image_html/kamil.jpg" width="128" height="128"></td>
+        </tr>
+        <tr>
+          <td><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Apr&egrave;s 
+            35 ans d'ambition au service de notre client&egrave;le, Marrakech 
+            Top Agro Export SA, met &agrave; votre disposition votre nouveau site 
+            pour mieux nous conna&icirc;tre <br>
+            </font></td>
+        </tr>
+        <tr>
+          <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Arbre 
+            &eacute;ternel, symbol de toutes les civilisations m&eacute;diterran&eacute;ennes, 
+            l'oilivier est l'arbre de vie et ses fruits sentent bon le soleil. 
+            Au Maroc, il est cultiv&eacute; dans les montagnes du Rif au Nord 
+            jusqu'aux vall&eacute;es de l'Oued Souss &agrave; Taroudant (Sud)<br>
+            La ceuillette des olives s'etale traditionnellement entre septembre 
+            et janvier, selon qu'on les cueille vertes ou m&ucirc;res. Car l'olive 
+            verte et l'olive noire sont un seul et m&ecirc;me fruit qui change 
+            de couleur au fur et &agrave; mesure de sa maturation. Les olives 
+            cueillies vertes sont fragiles et r&eacute;colt&eacute;es avec d'infinies 
+            pr&eacute;cautions</font><font size="2">.</font></td>
+        </tr>
+      </table>    </td>
+  </tr>
+  <tr align="center" valign="top"> 
+    <td height="30"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr bgcolor="#FFCC99" align="center"> 
+          <td><div align="center"><b><font face="Arial, Helvetica, sans-serif" size="2">Groupe 
+              &quot; Marrakech Top Agro&quot;<br>
+              PoBox :<font size="1"> </font></font><font face="Arial, Helvetica, sans-serif" size="1">641 
+              Marrakech - T&eacute;l : 05 24 33 52 01 / 05 24 33 52 02 / 05 24 33 56 39 --- Fax : 05 24 33 52 00<br>
+            E-mail : <a href="mailto:contact@marrakechtopagro.com">contact@marrakechtopagro.com</a> / <a href="mailto:topagro@menara.ma">topagro@menara.ma</a> / <a href="mailto:marrakechtopagro@hotmail.fr">marrakechtopagro@hotmail.fr</a></font></b></div></td>
+        </tr>
+      </table>    </td>
+  </tr>
+</table>
+<p align="center"><font color="#CCCCCC" size="1"><a href="http://www.agencecouleurs.com" target="_blank">Création site web Couleurs Com</a> <a href="marrakech.php" target="_blank">Marrakech</a></font></p>
+<div align="center"><a href="http://www.marrakechpocket.com" target="_blank"><font color="#FFe3c8" size="1">Immobilier Marrakech</font></a> <a href="http://www.marrakechpocket.com" target="_blank"><font color="#FFe3c8" size="1">Riad Marrakech</font></a><br>
+    <span class="style1">à voir :</span> <a href="http://www.marrakechpocket.com" class="style1" target="_blank">Tourisme Marrakech</a> <span class="style1">-</span> <a href="http://www.tangerpocket.com" class="style1" target="_blank">Tourisme Tanger</a> <span class="style1">-</span> <a href="http://www.casa-pocket.com" class="style1" target="_blank">Tourisme Casablanca</a>
+    </div>
+</body>
+</html>

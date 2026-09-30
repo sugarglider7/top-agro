@@ -1,0 +1,57 @@
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Untitled Document</title>
+
+</head>
+
+<body bgcolor="#FFe3c8" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+  <tr align="center" valign="top"> 
+    <td> 
+      <table width="100%" border="0">
+        <tr align="center"> 
+          <td><img src="images/image_html/kamil.jpg" width="128" height="128"></td>
+        </tr>
+        <tr>
+          <td><font size="2" face="Verdana, Arial, Helvetica, sans-serif">After 
+            35 years of ambition in the service of our &quot;clientele&quot;, 
+            Marrakesh Top Agro Export inc., provides you with your new site to 
+            know us better<br>
+            <br>
+            </font></td>
+        </tr>
+        <tr>
+          <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Regarded 
+            since antiquity as an integral part of Mediterranean culture and civilization, 
+            the olive tree is the tree of life bearing fruit imbued with the scent 
+            of the sun and the wind. In Morocco, the olive is cultivated from 
+            the far northern reaches of the Rif mountains all the way down to 
+            the Oued Souss valley of Taroudant region.<br>
+            The harvest traditionally spans from September to January depending 
+            upon whether the olives are picked green or ripe. The green olive 
+            and the black olive are, in fact, one in the same fruit. The color 
+            is simply testament to its ripeness. The earlier green olive is extremely 
+            fragile and great care must be taken during harvest in order to maintain 
+            its integrity.</font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr align="center" valign="top"> 
+    <td height="30"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr bgcolor="#FFCC99" align="center"> 
+          <td><b><font face="Arial, Helvetica, sans-serif" size="2">Group &quot; 
+            Marrakech Top Agro&quot;<br>
+            PoBox :<font size="1"> </font></font><font face="Arial, Helvetica, sans-serif" size="1">641 
+            Marrakech - Tel : 05 24 33 52 01 / 05 24 33 52 02 / 05 24 33 56 39 --- Fax : 05 24 33 52 00<br>
+            E-mail : <a href="mailto:contact@marrakechtopagro.com">contact@marrakechtopagro.com</a> / <a href="mailto:topagro@menara.ma">topagro@menara.ma</a> / <a href="mailto:marrakechtopagro@hotmail.fr">marrakechtopagro@hotmail.fr</a></font></b></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<p align="center"><font color="#CCCCCC" size="1"><a href="http://www.agencecouleurs.com" target="_blank">Création site web <strong>Couleurs Com</strong></a> <a href="../marrakech.php" target="_blank">Marrakech</a></font></p>
+<a href="http://www.marrakechpocket.com" target="_blank"><font color="#FFe3c8" size="1">Immobilier Marrakech</font></a> <a href="http://www.marrakechpocket.com" target="_blank"><font color="#FFe3c8" size="1">Riad Marrakech</font></a>
+</body>
+</html>
